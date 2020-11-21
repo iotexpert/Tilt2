@@ -11,12 +11,16 @@
 #include "wiced_bt_trace.h"
 
 
-#define TILT_IBEACON_DATA_LEN 20
+#define TILT_IBEACON_HEADER_LEN 20
+#define TILT_IBEACON_DATA_LEN 5
 typedef struct  {
     char *colorName;
-    uint8_t uuid[TILT_IBEACON_DATA_LEN];
+    uint8_t uuid[TILT_IBEACON_HEADER_LEN];
 } tilt_t;
 
+// Apple Bluetooth Company Code 0x004C
+// iBeacon Subtype = 0x02
+// Length = 0x15
 #define IBEACON_HEADER 0x4C,0x00,0x02,0x15
 
 static tilt_t tiltDB [] =
@@ -41,11 +45,11 @@ static void btm_advScanResultCback(wiced_bt_ble_scan_results_t *p_scan_result, u
 	uint8_t *mfgFieldData;
 	mfgFieldData = wiced_bt_ble_check_advertising_data(p_adv_data,BTM_BLE_ADVERT_TYPE_MANUFACTURER,&mfgFieldLen);
     
-	if(mfgFieldData && mfgFieldLen == 25)
+	if(mfgFieldData && mfgFieldLen == TILT_IBEACON_HEADER_LEN + TILT_IBEACON_DATA_LEN)
     {
         for(int i=0;i<NUM_TILT;i++)
         {
-            if(memcmp(mfgFieldData,tiltDB[i].uuid,TILT_IBEACON_DATA_LEN)==0)
+            if(memcmp(mfgFieldData,tiltDB[i].uuid,TILT_IBEACON_HEADER_LEN)==0)
             {
                 float gravity = ((float)((uint16_t)mfgFieldData[22] << 8 | (uint16_t)mfgFieldData[23]))/1000;
 		        int temperature = mfgFieldData[20] << 8 | mfgFieldData[21];
