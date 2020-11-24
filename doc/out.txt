@@ -1,0 +1,2938 @@
+Bluetooth monitor ver 5.50
+= Note: Linux version 5.4.51-v7l+ (armv7l)                             0.409798
+= Note: Bluetooth subsystem version 2.22                               0.409805
+= New Index: DC:A6:32:7A:B8:5D (Primary,UART,hci0)              [hci0] 0.409808
+= Open Index: DC:A6:32:7A:B8:5D                                 [hci0] 0.409811
+= Index Info: DC:A6:32:7.. (Cypress Semiconductor Corporation)  [hci0] 0.409813
+@ RAW Open: hcidump (privileged) version 2.22          {0x0004} [hci0] 0.409817
+@ RAW Open: python3 (privileged) version 2.22          {0x0003} [hci0] 0.409820
+@ RAW Open: python3 (privileged) version 2.22          {0x0002} [hci0] 0.409823
+@ MGMT Open: bluetoothd (privileged) version 1.14             {0x0001} 0.409827
+@ MGMT Open: btmon (privileged) version 1.14                  {0x0005} 0.410106
+> HCI Event: LE Meta Event (0x3e) plen 41                    #1 [hci0] 0.438653
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 42                    #2 [hci0] 0.469909
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 29                    #3 [hci0] 0.518088
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 41                    #4 [hci0] 0.546323
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -97 dBm (0x9f)
+> HCI Event: LE Meta Event (0x3e) plen 30                    #5 [hci0] 0.610701
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -77 dBm (0xb3)
+> HCI Event: LE Meta Event (0x3e) plen 41                    #6 [hci0] 0.650726
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 42                    #7 [hci0] 0.671863
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 27                    #8 [hci0] 0.698626
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 29                    #9 [hci0] 0.701789
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #10 [hci0] 0.752516
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #11 [hci0] 0.795695
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: E3:60:58:E2:D4:85 (OUI E3-60-58)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 3 entries
+          Device Information (0x180a)
+          Dialog Semiconductor GmbH (0xfef5)
+          Unknown (0xec88)
+        Name (complete): Govee_H5074_D485
+        RSSI: -78 dBm (0xb2)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #12 [hci0] 0.858704
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #13 [hci0] 0.880714
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -77 dBm (0xb3)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #14 [hci0] 0.885557
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #15 [hci0] 0.965854
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #16 [hci0] 1.004461
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #17 [hci0] 1.036499
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #18 [hci0] 1.064337
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #19 [hci0] 1.067875
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #20 [hci0] 1.110428
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #21 [hci0] 1.216169
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -93 dBm (0xa3)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #22 [hci0] 1.221474
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #23 [hci0] 1.248071
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #24 [hci0] 1.250548
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #25 [hci0] 1.280705
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #26 [hci0] 1.402838
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #27 [hci0] 1.491894
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #28 [hci0] 1.531217
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #29 [hci0] 1.564791
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -93 dBm (0xa3)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #30 [hci0] 1.589854
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -79 dBm (0xb1)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #31 [hci0] 1.596312
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #32 [hci0] 1.610566
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -84 dBm (0xac)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #33 [hci0] 1.639934
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -93 dBm (0xa3)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #34 [hci0] 1.654625
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6C:59:FD:81:6E:EA (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 5 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 051e427100c1
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #35 [hci0] 1.704941
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #36 [hci0] 1.722189
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 26                   #37 [hci0] 1.744446
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 18:B4:30:E6:4A:28 (Non-Resolvable)
+        Data length: 14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (partial): 1 entry
+          Nest Labs Inc. (0xfeaf)
+        Name (complete): N00W0
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #38 [hci0] 1.774402
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #39 [hci0] 1.793135
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #40 [hci0] 1.806341
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 26                   #41 [hci0] 1.808512
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:21:9A:F2:96:11 (Static)
+        Data length: 14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (partial): 1 entry
+          Nest Labs Inc. (0xfeaf)
+        Name (complete): N04NK
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #42 [hci0] 1.851248
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #43 [hci0] 1.906327
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #44 [hci0] 1.927154
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6C:59:FD:81:6E:EA (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 5 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 051e427100c1
+        RSSI: -97 dBm (0x9f)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #45 [hci0] 1.960676
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #46 [hci0] 1.978471
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #47 [hci0] 2.062525
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #48 [hci0] 2.064486
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #49 [hci0] 2.217501
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: DD:B9:92:D3:2B:F6 (Static)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: de742df0-7013-12b5-444b-b1c530bb95a4
+          Version: 17920.64003
+          TX power: -59 dB
+        RSSI: -75 dBm (0xb5)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #50 [hci0] 2.325222
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #51 [hci0] 2.327583
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #52 [hci0] 2.341201
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #53 [hci0] 2.522385
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #54 [hci0] 2.524916
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #55 [hci0] 2.531916
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -78 dBm (0xb2)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #56 [hci0] 2.640791
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #57 [hci0] 2.687729
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #58 [hci0] 2.704394
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #59 [hci0] 2.706173
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #60 [hci0] 2.736682
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: E3:60:58:F1:CD:15 (OUI E3-60-58)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 3 entries
+          Device Information (0x180a)
+          Dialog Semiconductor GmbH (0xfef5)
+          Unknown (0xec88)
+        Name (complete): Govee_H5074_CD15
+        RSSI: -94 dBm (0xa2)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #61 [hci0] 2.798504
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: E3:60:58:E2:D4:85 (OUI E3-60-58)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 3 entries
+          Device Information (0x180a)
+          Dialog Semiconductor GmbH (0xfef5)
+          Unknown (0xec88)
+        Name (complete): Govee_H5074_D485
+        RSSI: -97 dBm (0x9f)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #62 [hci0] 2.804520
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #63 [hci0] 2.850005
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #64 [hci0] 2.870226
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #65 [hci0] 2.885641
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #66 [hci0] 2.887425
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #67 [hci0] 2.894514
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #68 [hci0] 2.901437
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #69 [hci0] 2.956343
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #70 [hci0] 3.052762
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #71 [hci0] 3.070627
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #72 [hci0] 3.077002
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #73 [hci0] 3.104500
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #74 [hci0] 3.173286
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #75 [hci0] 3.206209
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #76 [hci0] 3.235056
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #77 [hci0] 3.246093
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #78 [hci0] 3.251831
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #79 [hci0] 3.277597
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -97 dBm (0x9f)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #80 [hci0] 3.329764
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #81 [hci0] 3.351933
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #82 [hci0] 3.378259
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #83 [hci0] 3.417401
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #84 [hci0] 3.435624
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #85 [hci0] 3.437368
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #86 [hci0] 3.587018
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #87 [hci0] 3.599899
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #88 [hci0] 3.608201
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 45:4E:E0:A8:DE:B3 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 8 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 381dab069518
+        RSSI: -99 dBm (0x9d)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #89 [hci0] 3.615651
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #90 [hci0] 3.618132
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #91 [hci0] 3.625039
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #92 [hci0] 3.646623
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -93 dBm (0xa3)
+> HCI Event: LE Meta Event (0x3e) plen 42                   #93 [hci0] 3.785502
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #94 [hci0] 3.795212
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: E3:60:58:E2:D4:85 (OUI E3-60-58)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 3 entries
+          Device Information (0x180a)
+          Dialog Semiconductor GmbH (0xfef5)
+          Unknown (0xec88)
+        Name (complete): Govee_H5074_D485
+        RSSI: -79 dBm (0xb1)
+> HCI Event: LE Meta Event (0x3e) plen 41                   #95 [hci0] 3.798271
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 27                   #96 [hci0] 3.799381
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 29                   #97 [hci0] 3.801864
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 43                   #98 [hci0] 3.851431
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -100 dBm (0x9c)
+> HCI Event: LE Meta Event (0x3e) plen 30                   #99 [hci0] 3.900054
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #100 [hci0] 3.959046
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #101 [hci0] 3.969256
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #102 [hci0] 3.980641
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #103 [hci0] 4.006340
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #104 [hci0] 4.043303
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #105 [hci0] 4.066690
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #106 [hci0] 4.135098
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6C:59:FD:81:6E:EA (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 5 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 051e427100c1
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #107 [hci0] 4.166236
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #108 [hci0] 4.171297
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #109 [hci0] 4.215771
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #110 [hci0] 4.224633
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: DD:B9:92:D3:2B:F6 (Static)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: de742df0-7013-12b5-444b-b1c530bb95a4
+          Version: 17920.64003
+          TX power: 0 dB
+        RSSI: -75 dBm (0xb5)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #111 [hci0] 4.324845
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -94 dBm (0xa2)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #112 [hci0] 4.335227
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 26                  #113 [hci0] 4.392106
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:21:9A:F2:96:11 (Static)
+        Data length: 14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (partial): 1 entry
+          Nest Labs Inc. (0xfeaf)
+        Name (complete): N04NK
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #114 [hci0] 4.412656
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6C:59:FD:81:6E:EA (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 5 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 051e427100c1
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #115 [hci0] 4.428872
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #116 [hci0] 4.449620
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -77 dBm (0xb3)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #117 [hci0] 4.479844
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -93 dBm (0xa3)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #118 [hci0] 4.520224
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -79 dBm (0xb1)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #119 [hci0] 4.528530
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #120 [hci0] 4.586715
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #121 [hci0] 4.684733
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6C:59:FD:81:6E:EA (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 5 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 051e427100c1
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #122 [hci0] 4.702749
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #123 [hci0] 4.714444
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #124 [hci0] 4.731956
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -85 dBm (0xab)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #125 [hci0] 4.784541
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #126 [hci0] 4.841386
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #127 [hci0] 4.884893
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #128 [hci0] 4.896955
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #129 [hci0] 5.002535
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #130 [hci0] 5.067399
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #131 [hci0] 5.076216
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #132 [hci0] 5.081887
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #133 [hci0] 5.232961
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: DD:B9:92:D3:2B:F6 (Static)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: de742df0-7013-12b5-444b-b1c530bb95a4
+          Version: 17920.64003
+          TX power: 0 dB
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #134 [hci0] 5.249874
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #135 [hci0] 5.255710
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 45:4E:E0:A8:DE:B3 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 8 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 381dab069518
+        RSSI: -101 dBm (0x9b)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #136 [hci0] 5.261360
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #137 [hci0] 5.264408
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #138 [hci0] 5.268359
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #139 [hci0] 5.361314
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #140 [hci0] 5.436710
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #141 [hci0] 5.439948
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #142 [hci0] 5.449418
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #143 [hci0] 5.468858
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -97 dBm (0x9f)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #144 [hci0] 5.554826
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -94 dBm (0xa2)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #145 [hci0] 5.572537
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 26                  #146 [hci0] 5.591945
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 18:B4:30:E6:4A:28 (Non-Resolvable)
+        Data length: 14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (partial): 1 entry
+          Nest Labs Inc. (0xfeaf)
+        Name (complete): N00W0
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #147 [hci0] 5.617963
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #148 [hci0] 5.621204
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #149 [hci0] 5.630694
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -83 dBm (0xad)
+> HCI Event: LE Meta Event (0x3e) plen 26                  #150 [hci0] 5.678485
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:21:9A:F2:96:11 (Static)
+        Data length: 14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (partial): 1 entry
+          Nest Labs Inc. (0xfeaf)
+        Name (complete): N04NK
+        RSSI: -97 dBm (0x9f)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #151 [hci0] 5.681365
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -96 dBm (0xa0)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #152 [hci0] 5.712154
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -94 dBm (0xa2)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #153 [hci0] 5.736276
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: E3:60:58:F1:CD:15 (OUI E3-60-58)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 3 entries
+          Device Information (0x180a)
+          Dialog Semiconductor GmbH (0xfef5)
+          Unknown (0xec88)
+        Name (complete): Govee_H5074_CD15
+        RSSI: -93 dBm (0xa3)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #154 [hci0] 5.797542
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: E3:60:58:E2:D4:85 (OUI E3-60-58)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 3 entries
+          Device Information (0x180a)
+          Dialog Semiconductor GmbH (0xfef5)
+          Unknown (0xec88)
+        Name (complete): Govee_H5074_D485
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #155 [hci0] 5.805685
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -84 dBm (0xac)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #156 [hci0] 5.896382
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -84 dBm (0xac)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #157 [hci0] 5.990691
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -84 dBm (0xac)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #158 [hci0] 6.048863
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -92 dBm (0xa4)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #159 [hci0] 6.109529
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #160 [hci0] 6.141337
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #161 [hci0] 6.165186
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #162 [hci0] 6.188215
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #163 [hci0] 6.236065
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: DD:B9:92:D3:2B:F6 (Static)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: de742df0-7013-12b5-444b-b1c530bb95a4
+          Version: 17920.64003
+          TX power: 0 dB
+        RSSI: -76 dBm (0xb4)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #164 [hci0] 6.318880
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -85 dBm (0xab)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #165 [hci0] 6.346450
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #166 [hci0] 6.374664
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #167 [hci0] 6.424677
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -97 dBm (0x9f)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #168 [hci0] 6.465195
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #169 [hci0] 6.527712
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #170 [hci0] 6.532573
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #171 [hci0] 6.538580
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #172 [hci0] 6.556981
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -82 dBm (0xae)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #173 [hci0] 6.634689
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #174 [hci0] 6.647179
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #175 [hci0] 6.708962
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #176 [hci0] 6.740141
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -85 dBm (0xab)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #177 [hci0] 6.795113
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: E3:60:58:E2:D4:85 (OUI E3-60-58)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (complete): 3 entries
+          Device Information (0x180a)
+          Dialog Semiconductor GmbH (0xfef5)
+          Unknown (0xec88)
+        Name (complete): Govee_H5074_D485
+        RSSI: -78 dBm (0xb2)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #178 [hci0] 6.846400
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 26                  #179 [hci0] 6.877059
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 18:B4:30:E6:4A:28 (Non-Resolvable)
+        Data length: 14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (partial): 1 entry
+          Nest Labs Inc. (0xfeaf)
+        Name (complete): N00W0
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #180 [hci0] 6.890194
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #181 [hci0] 6.918419
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 56:E1:EF:9D:AC:F4 (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 111e37006f9e
+        RSSI: -79 dBm (0xb1)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #182 [hci0] 6.941105
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #183 [hci0] 6.949555
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 26                  #184 [hci0] 6.972074
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: DD:21:9A:F2:96:11 (Static)
+        Data length: 14
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        16-bit Service UUIDs (partial): 1 entry
+          Nest Labs Inc. (0xfeaf)
+        Name (complete): N04NK
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #185 [hci0] 7.055153
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #186 [hci0] 7.071439
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #187 [hci0] 7.085117
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -89 dBm (0xa7)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #188 [hci0] 7.092175
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 64:16:66:3D:44:AC (Resolvable)
+        Data length: 31
+        128-bit Service UUIDs (complete): 1 entry
+          Vendor specific (d2d3f8ef-9c99-4d9c-a2b3-91c85d44326c)
+        Company: not assigned (5732)
+          Data: 663d44ac024349164a
+        RSSI: -94 dBm (0xa2)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #189 [hci0] 7.155811
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -86 dBm (0xaa)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #190 [hci0] 7.187081
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 39:DC:93:F3:A5:98 (Non-Resolvable)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: not assigned (19456)
+          Type: iBeacon (2)
+          UUID: 8d8b5e7e-2ea6-4a85-5846-daba9cf38626
+          Version: 256.0
+          TX power: -55 dB
+        RSSI: -91 dBm (0xa5)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #191 [hci0] 7.238571
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: DD:B9:92:D3:2B:F6 (Static)
+        Data length: 30
+        Flags: 0x04
+          BR/EDR Not Supported
+        Company: Apple, Inc. (76)
+          Type: iBeacon (2)
+          UUID: de742df0-7013-12b5-444b-b1c530bb95a4
+          Version: 17920.64003
+          TX power: 0 dB
+        RSSI: -80 dBm (0xb0)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #192 [hci0] 7.257408
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -81 dBm (0xaf)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #193 [hci0] 7.268776
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #194 [hci0] 7.309928
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #195 [hci0] 7.367061
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #196 [hci0] 7.442235
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -79 dBm (0xb1)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #197 [hci0] 7.450025
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -87 dBm (0xa9)
+> HCI Event: LE Meta Event (0x3e) plen 43                  #198 [hci0] 7.524894
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 08:0C:45:53:EA:A7 (Non-Resolvable)
+        Data length: 31
+        Company: Microsoft (6)
+          Data: 010f2002adb87ec8e5f4aa370d9062a0a6937d1bb96822f5488a89
+        RSSI: -90 dBm (0xa6)
+> HCI Event: LE Meta Event (0x3e) plen 41                  #199 [hci0] 7.572086
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: 9E:7B:EF:0B:74:20 (OUI 9E-7B-EF)
+        Data length: 29
+        Flags: 0x06
+          LE General Discoverable Mode
+          BR/EDR Not Supported
+        Service Data (UUID 0xfdf7): 010cc281ce0c74587719c8e384a34250980000000003
+        RSSI: -95 dBm (0xa1)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #200 [hci0] 7.632570
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 29                  #201 [hci0] 7.658272
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Public (0x00)
+        Address: C8:69:CD:18:BC:E6 (Apple, Inc.)
+        Data length: 17
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 12 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 0c1417bfe9
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 30                  #202 [hci0] 7.715942
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6C:59:FD:81:6E:EA (Resolvable)
+        Data length: 18
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        TX power: 5 dBm
+        Company: Apple, Inc. (76)
+          Type: Unknown (16)
+          Data: 051e427100c1
+        RSSI: -98 dBm (0x9e)
+> HCI Event: LE Meta Event (0x3e) plen 42                  #203 [hci0] 7.811751
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Connectable undirected - ADV_IND (0x00)
+        Address type: Random (0x01)
+        Address: 6A:D6:2B:77:C4:44 (Resolvable)
+        Data length: 30
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Unknown (12)
+          Data: 00ba45c75e9d0a10dcd8efad86ec
+          Type: Unknown (16)
+          Data: 4b1cda84cd
+        RSSI: -88 dBm (0xa8)
+> HCI Event: LE Meta Event (0x3e) plen 27                  #204 [hci0] 7.816996
+      LE Advertising Report (0x02)
+        Num reports: 1
+        Event type: Non connectable undirected - ADV_NONCONN_IND (0x03)
+        Address type: Random (0x01)
+        Address: 27:F6:6F:1E:7A:78 (Non-Resolvable)
+        Data length: 15
+        Flags: 0x1a
+          LE General Discoverable Mode
+          Simultaneous LE and BR/EDR (Controller)
+          Simultaneous LE and BR/EDR (Host)
+        Company: Apple, Inc. (76)
+          Type: Apple TV (9)
+          Data: 0324c0a8200d
+        RSSI: -82 dBm (0xae)

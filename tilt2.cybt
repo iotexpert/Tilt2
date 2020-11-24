@@ -120,7 +120,7 @@
                     <Property id="HostLowAdvIntervalMin" value="1280"/>
                     <Property id="HostLowAdvIntervalMax" value="1280"/>
                     <Property id="HostLowAdvTimeoutEnabled" value="true"/>
-                    <Property id="HostLowAdvTimeout" value="60"/>
+                    <Property id="HostLowAdvTimeout" value="30"/>
                     <Property id="HostHighDirAdvIntervalMin" value="250"/>
                     <Property id="HostHighDirAdvIntervalMax" value="500"/>
                     <Property id="HostLowDirAdvIntervalMin" value="30"/>
@@ -145,22 +145,20 @@
         <ObserverConfigurations>
             <ObserverConfiguration name="Observer configuration 0">
                 <ScanProperties>
-                    <Property id="ScanningState" value="Active"/>
-                    <Property id="HighDutyWindow" value="30"/>
+                    <Property id="ScanningState" value="Passive"/>
+                    <Property id="HighDutyWindow" value="60"/>
                     <Property id="HighDutyInterval" value="60"/>
                     <Property id="HostHighDutyTimeoutEnabled" value="true"/>
-                    <Property id="HighDutyTimeout" value="30"/>
+                    <Property id="HighDutyTimeout" value="65535"/>
                     <Property id="LowDutyWindow" value="60"/>
                     <Property id="LowDutyInterval" value="60"/>
                     <Property id="HostLowDutyTimeoutEnabled" value="false"/>
-                    <Property id="HighDutyConnWindow" value="30"/>
+                    <Property id="HighDutyConnWindow" value="60"/>
                     <Property id="HighDutyConnInterval" value="60"/>
-                    <Property id="HostHighDutyConnTimeoutEnabled" value="true"/>
-                    <Property id="HighDutyConnTimeout" value="30"/>
+                    <Property id="HostHighDutyConnTimeoutEnabled" value="false"/>
                     <Property id="LowDutyConnWindow" value="1125"/>
                     <Property id="LowDutyConnInterval" value="1280"/>
-                    <Property id="HostLowDutyConnTimeoutEnabled" value="true"/>
-                    <Property id="LowDutyConnTimeout" value="30"/>
+                    <Property id="HostLowDutyConnTimeoutEnabled" value="false"/>
                 </ScanProperties>
             </ObserverConfiguration>
         </ObserverConfigurations>

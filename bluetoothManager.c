@@ -9,6 +9,7 @@
 #include "wiced_bt_stack.h"
 #include "wiced_bt_dev.h"
 #include "wiced_bt_trace.h"
+#include "btutil.h"
 
 
 #define TILT_IBEACON_HEADER_LEN 20
@@ -86,7 +87,8 @@ wiced_result_t app_bt_management_callback(wiced_bt_management_evt_t event, wiced
         case BTM_ENABLED_EVT:
             if (WICED_BT_SUCCESS == p_event_data->enabled.status)
             {
-				wiced_bt_ble_observe(WICED_TRUE, 0,btm_advScanResultCback);
+				//wiced_bt_ble_observe(WICED_TRUE, 0,btm_advScanResultCback);
+				wiced_bt_ble_scan(BTM_BLE_SCAN_TYPE_HIGH_DUTY, WICED_FALSE,btm_advScanResultCback);
             }
             else
             {
@@ -96,7 +98,7 @@ wiced_result_t app_bt_management_callback(wiced_bt_management_evt_t event, wiced
             break;
 
         default:
-            printf("Unhandled Bluetooth Management Event: 0x%x\n", event);
+            printf("Unhandled Bluetooth Management Event: %s\n", btutil_getBTEventName (event));
             break;
     }
 
