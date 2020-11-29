@@ -9,10 +9,10 @@
 #include "bluetoothManager.h"
 #include "cycfg_bt_settings.h"
 #include "bt_platform_cfg_settings.h"
+#include "tiltDataManager.h"
 
 volatile int uxTopUsedPriority ;
 TaskHandle_t blinkTaskHandle;
-
 
 void blink_task(void *arg)
 {
@@ -24,7 +24,6 @@ void blink_task(void *arg)
     	vTaskDelay(500);
     }
 }
-
 
 int main(void)
 {
@@ -42,8 +41,10 @@ int main(void)
 
     // Stack size in WORDs
     // Idle task = priority 0
-    xTaskCreate(blink_task, "blinkTask", configMINIMAL_STACK_SIZE,0 /* args */ ,0 /* priority */, &blinkTaskHandle);
-    xTaskCreate(usrcmd_task, "usrcmd_task", configMINIMAL_STACK_SIZE*4,0 /* args */ ,0 /* priority */, 0);
+    xTaskCreate(blink_task, "Blink", configMINIMAL_STACK_SIZE,0 /* args */ ,0 /* priority */, &blinkTaskHandle);
+    xTaskCreate(usrcmd_task, "USR CMD", configMINIMAL_STACK_SIZE*4,0 /* args */ ,0 /* priority */, 0);
+    xTaskCreate(tdm_task, "Tilt Data Manager", configMINIMAL_STACK_SIZE*2,0 /* args */ ,0 /* priority */, 0);
+
     vTaskStartScheduler();
 }
 

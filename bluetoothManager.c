@@ -10,58 +10,7 @@
 #include "wiced_bt_dev.h"
 #include "wiced_bt_trace.h"
 #include "btutil.h"
-
-
-#define TILT_IBEACON_HEADER_LEN 20
-#define TILT_IBEACON_DATA_LEN 5
-typedef struct  {
-    char *colorName;
-    uint8_t uuid[TILT_IBEACON_HEADER_LEN];
-} tilt_t;
-
-// Apple Bluetooth Company Code 0x004C
-// iBeacon Subtype = 0x02
-// Length = 0x15
-#define IBEACON_HEADER 0x4C,0x00,0x02,0x15
-
-static tilt_t tiltDB [] =
-{
-    {"Red",    {IBEACON_HEADER,0xA4,0x95,0xBB,0x10,0xC5,0xB1,0x4B,0x44,0xB5,0x12,0x13,0x70,0xF0,0x2D,0x74,0xDE}},
-    {"Green" , {IBEACON_HEADER,0xA4,0x95,0xBB,0x20,0xC5,0xB1,0x4B,0x44,0xB5,0x12,0x13,0x70,0xF0,0x2D,0x74,0xDE}},
-    {"Black" , {IBEACON_HEADER,0xA4,0x95,0xBB,0x30,0xC5,0xB1,0x4B,0x44,0xB5,0x12,0x13,0x70,0xF0,0x2D,0x74,0xDE}},
-    {"Purple", {IBEACON_HEADER,0xA4,0x95,0xBB,0x40,0xC5,0xB1,0x4B,0x44,0xB5,0x12,0x13,0x70,0xF0,0x2D,0x74,0xDE}},
-    {"Orange", {IBEACON_HEADER,0xA4,0x95,0xBB,0x50,0xC5,0xB1,0x4B,0x44,0xB5,0x12,0x13,0x70,0xF0,0x2D,0x74,0xDE}},
-    {"Blue"  , {IBEACON_HEADER,0xA4,0x95,0xBB,0x60,0xC5,0xB1,0x4B,0x44,0xB5,0x12,0x13,0x70,0xF0,0x2D,0x74,0xDE}},
-    {"Yellow", {IBEACON_HEADER,0xA4,0x95,0xBB,0x70,0xC5,0xB1,0x4B,0x44,0xB5,0x12,0x13,0x70,0xF0,0x2D,0x74,0xDE}},
-    {"Pink"  , {IBEACON_HEADER,0xA4,0x95,0xBB,0x80,0xC5,0xB1,0x4B,0x44,0xB5,0x12,0x13,0x70,0xF0,0x2D,0x74,0xDE}},
-};
-#define NUM_TILT (sizeof(tiltDB)/sizeof(tilt_t))
-
-static void btm_advScanResultCback(wiced_bt_ble_scan_results_t *p_scan_result, uint8_t *p_adv_data )
-{
-	if (p_scan_result == 0)
-		return;
-
-	uint8_t mfgFieldLen;
-	uint8_t *mfgFieldData;
-	mfgFieldData = wiced_bt_ble_check_advertising_data(p_adv_data,BTM_BLE_ADVERT_TYPE_MANUFACTURER,&mfgFieldLen);
-    
-	if(mfgFieldData && mfgFieldLen == TILT_IBEACON_HEADER_LEN + TILT_IBEACON_DATA_LEN)
-    {
-        for(int i=0;i<NUM_TILT;i++)
-        {
-            if(memcmp(mfgFieldData,tiltDB[i].uuid,TILT_IBEACON_HEADER_LEN)==0)
-            {
-                float gravity = ((float)((uint16_t)mfgFieldData[22] << 8 | (uint16_t)mfgFieldData[23]))/1000;
-		        int temperature = mfgFieldData[20] << 8 | mfgFieldData[21];
-                int8_t txPower = mfgFieldData[24];
-
-                printf("Found Color=%s Gravity=%f Temperature = %d txPower=%d\n",tiltDB[i].colorName,gravity,temperature,txPower);
-                break;
-            }
-        }
-    }
-}
+#include "tiltDataManager.h"
 
 /**************************************************************************************************
 * Function Name: app_bt_management_callback()
@@ -87,8 +36,7 @@ wiced_result_t app_bt_management_callback(wiced_bt_management_evt_t event, wiced
         case BTM_ENABLED_EVT:
             if (WICED_BT_SUCCESS == p_event_data->enabled.status)
             {
-				//wiced_bt_ble_observe(WICED_TRUE, 0,btm_advScanResultCback);
-				wiced_bt_ble_scan(BTM_BLE_SCAN_TYPE_HIGH_DUTY, WICED_FALSE,btm_advScanResultCback);
+				wiced_bt_ble_observe(WICED_TRUE, 0,tdm_processIbeacon);
             }
             else
             {
