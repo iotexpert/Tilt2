@@ -23,9 +23,9 @@
 typedef struct  {
     char *colorName;
     uint8_t uuid[TILT_IBEACON_HEADER_LEN];
-    tdm_tiltData_t *data;
-    int numDataPoints;
-    int numDataSeen;
+    volatile tdm_tiltData_t *data;
+    volatile int numDataPoints;
+    volatile int numDataSeen;
 } tilt_t;
 
 #define IBEACON_HEADER 0x4C,0x00,0x02,0x15
@@ -51,6 +51,7 @@ static tilt_t tiltDB [] =
 typedef enum {
     TDM_CMD_ADD_DATAPOINT,
     TDM_CMD_PROCESS_DATA,
+    TDM_CMD_GET_DATAPOINT,
 } tdm_cmd_t;
 
 typedef struct {
@@ -81,7 +82,7 @@ static void tdm_processData()
         tiltDB[i].data->gravity /= tiltDB[i].numDataPoints;
         tiltDB[i].data->temperature /= tiltDB[i].numDataPoints;
         tiltDB[i].numDataPoints = 1;
-        printf("Tilt %s Temperature = %d Gravity =%f\n",tiltDB[i].colorName,tiltDB[i].data->temperature,tiltDB[i].data->gravity);
+        //printf("Tilt %s Temperature = %d Gravity =%f\n",tiltDB[i].colorName,tiltDB[i].data->temperature,tiltDB[i].data->gravity);
     }
 }
 
@@ -112,6 +113,19 @@ static void tdm_addData(tdm_tiltHandle_t handle, tdm_tiltData_t *data)
     tiltDB[handle].data->txPower = data->txPower;
 }
 
+// This function returns a malloc'd copy of the front of the most recent datapoint ... this function should only be used 
+// internally because it is not thread safe.
+static tdm_tiltData_t *tdm_getDataPointCopy(tdm_tiltHandle_t handle)
+{
+    tdm_tiltData_t *dp;
+    dp = malloc(sizeof(tdm_tiltData_t));
+    memcpy(dp,(tdm_tiltData_t *)tiltDB[handle].data,sizeof(tdm_tiltData_t));
+
+    dp->gravity = dp->gravity / tiltDB[handle].numDataPoints;
+    dp->temperature = dp->temperature / tiltDB[handle].numDataPoints;
+
+    return dp;
+}
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
 //
@@ -123,6 +137,7 @@ void tdm_task(void *arg)
 {
     tdm_cmdQueue = xQueueCreate(10,sizeof(tdm_cmdMsg_t));
     tdm_cmdMsg_t msg;
+    tdm_tiltData_t *dp;
 
     TimerHandle_t tdm_processDataTimer;
 
@@ -142,8 +157,39 @@ void tdm_task(void *arg)
             case TDM_CMD_PROCESS_DATA:
                 tdm_processData();
             break;
+
+            case TDM_CMD_GET_DATAPOINT:
+                dp = tdm_getDataPointCopy(msg.tilt);
+                xQueueSend(msg.msg,&dp,0); // ARH 0 is probably a bad idea
+            break;
         }
     }
+}
+
+char *tdm_getColorString(tdm_tiltHandle_t handle)
+{
+    return tiltDB[handle].colorName;
+}
+
+int tdm_getNumTilt()
+{
+    return NUM_TILT;
+}
+
+uint32_t tdm_getActiveTiltMask()
+{
+    uint32_t mask=0;
+    for(int i=0;i<NUM_TILT;i++)
+    {
+        if(tiltDB[i].data)
+            mask |= 1<<i;
+    }
+    return mask;
+}
+
+uint32_t tdm_getNumDataSeen(tdm_tiltHandle_t handle)
+{
+    return tiltDB[handle].numDataSeen;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -217,4 +263,29 @@ void tdm_processIbeacon(wiced_bt_ble_scan_results_t *p_scan_result,uint8_t *p_ad
             
         }
     }
+}
+
+tdm_tiltData_t *tdm_getTiltData(tdm_tiltHandle_t handle)
+{
+    QueueHandle_t respqueue;
+    tdm_tiltData_t *rsp;
+
+    if(handle<0 || handle>=NUM_TILT || tiltDB[handle].data == 0 )
+        return 0;
+
+    respqueue = xQueueCreate(1,sizeof(tdm_tiltData_t *));
+    if(respqueue == 0)
+        return 0;
+
+    tdm_cmdMsg_t msg;
+    msg.msg = respqueue;
+    msg.tilt = handle;
+    msg.cmd =  TDM_CMD_GET_DATAPOINT;
+    if(xQueueSend(tdm_cmdQueue,&msg,0) != pdTRUE)
+    {
+        printf("failed to send to dmQueue\n");
+    }
+    xQueueReceive(respqueue,(void *)&rsp,portMAX_DELAY);
+    vQueueDelete(respqueue);
+    return rsp;
 }

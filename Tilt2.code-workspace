@@ -21,8 +21,7 @@
         "cortex-debug.armToolchainPath": "${config:modustoolbox.toolsPath}/gcc/bin",
         "cortex-debug.openocdPath": "${config:modustoolbox.toolsPath}/openocd/bin/openocd",
         "files.associations": {
-            "iterator": "cpp",
-            "random": "cpp"
+            "queue": "c"
         }
     }
 }

@@ -42,6 +42,10 @@
 
 #include "FreeRTOS.h"
 #include "task.h"
+#include "queue.h"
+#include "tiltDataManager.h"
+
+#include <stdlib.h>
 
 static ntshell_t ntshell;
 
@@ -52,6 +56,7 @@ static int usrcmd_help(int argc, char **argv);
 static int usrcmd_info(int argc, char **argv);
 static int usrcmd_clear(int argc, char **argv);
 static int usrcmd_pargs(int argc, char **argv);
+static int usrcmd_testdm(int argc, char **argv);
 #ifdef configUSE_TRACE_FACILITY
 #if configUSE_STATS_FORMATTING_FUNCTIONS ==1
 static int usrcmd_list(int argc, char **argv);
@@ -74,6 +79,8 @@ static const cmd_table_t cmdlist[] = {
     { "tasks","print the list of RTOS Tasks", usrcmd_list},
 #endif
 #endif
+    { "testdm","Test tilt data manager API", usrcmd_testdm},
+
 };
 
 
@@ -184,3 +191,33 @@ static int usrcmd_list(int argc,char **argv)
 }
 #endif
 #endif
+
+
+static int usrcmd_testdm(int argc, char **argv)
+{
+    tdm_tiltData_t *msg;
+
+    printf("NumTilt = %d\n",tdm_getNumTilt());
+    printf("Active = %X\n",(unsigned int)tdm_getActiveTiltMask());
+    
+    for(int i =0;i<tdm_getNumTilt();i++)
+    {
+        printf("Color = %s\t#Seen=%d\t",
+            tdm_getColorString(i),
+            (int)tdm_getNumDataSeen(i));
+
+        if(tdm_getActiveTiltMask() & 1<<i)
+        {
+            msg = tdm_getTiltData(i);
+            if(msg)
+            {
+                printf("G=%f\tT=%d",
+                    msg->gravity,
+                    (int)msg->temperature);
+                free(msg);
+            }
+        }
+        printf("\n");
+    }
+    return 0;
+}
