@@ -4,6 +4,7 @@
 #include "FreeRTOS.h"
 #include "queue.h"
 #include "wiced_bt_ble.h"
+#include "GUI.h"
 
 typedef struct {
     float gravity;
@@ -25,4 +26,5 @@ int tdm_getNumTilt();                                 // Returns the number of p
 uint32_t tdm_getActiveTiltMask();                     // Return a bitmask of the active handles
 uint32_t tdm_getNumDataSeen(tdm_tiltHandle_t handle); // Return number of data points seen
 tdm_tiltData_t *tdm_getTiltData(tdm_tiltHandle_t handle);
+GUI_COLOR tdm_colorGUI(tdm_tiltHandle_t handle);
 
