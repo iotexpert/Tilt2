@@ -228,7 +228,6 @@ static void dm_displayScreenTableInit()
 
 static void dm_displayScreenTableUpdate()
 {
-    return;
     uint32_t activeTilts =tdm_getActiveTiltMask();
 
     char buff[64];
@@ -293,7 +292,7 @@ static bool dm_displayScreenTableSeq()
 #define SINGLE_TIME_ROW (6)
 
 
-tdm_tiltHandle_t currentSingle = 0xFF;
+static tdm_tiltHandle_t currentSingle = 0xFF;
 
 static bool dm_displaySinglePre()
 {
@@ -352,21 +351,14 @@ static void dm_displaySingleUpdate()
     char txPowerString[10];
     char rssiString[10];
     char timeString[64];
-    
-    
+       
     GUI_SetBkColor(GUI_BLACK);
     GUI_SetFont(GUI_FONT_32B_ASCII);
-
-
     GUI_SetColor(tdm_colorGUI(currentSingle));
     
     if(1<<currentSingle & activeTilts)
     {
-        
-
         tdm_tiltData_t *response = tdm_getTiltData(currentSingle);
-
-
         sprintf(gravString,"%1.3f",response->gravity);
         sprintf(tempString,"%02d",response->temperature);
         sprintf(txPowerString,"%d",response->txPower);
@@ -381,8 +373,6 @@ static void dm_displaySingleUpdate()
         seconds = seconds - (minutes * 60);
         
         sprintf(timeString,"%02d:%02d:%02d:%02d",days,hours,minutes,seconds);                       
-                     
-
         free(response);
     }
 
