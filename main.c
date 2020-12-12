@@ -11,6 +11,7 @@
 #include "bt_platform_cfg_settings.h"
 #include "tiltDataManager.h"
 #include "displayManager.h"
+#include "capsenseManager.h"
 
 volatile int uxTopUsedPriority ;
 TaskHandle_t blinkTaskHandle;
@@ -46,6 +47,7 @@ int main(void)
     xTaskCreate(usrcmd_task, "USR CMD", configMINIMAL_STACK_SIZE*4,0 /* args */ ,0 /* priority */, 0);
     xTaskCreate(tdm_task, "Tilt Data Manager", configMINIMAL_STACK_SIZE*2,0 /* args */ ,0 /* priority */, 0);
     xTaskCreate(dm_task, "Display Manager", configMINIMAL_STACK_SIZE*3,0 /* args */ ,0 /* priority */, 0);
+    xTaskCreate(cpm_task, "CapSense Manager", configMINIMAL_STACK_SIZE*2,0 /* args */ ,0 /* priority */, 0);
 
     vTaskStartScheduler();
 }
